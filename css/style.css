@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: #2E378E;
+    background-size: cover;
+}
+.nav{
+    align-items: center;
+color: white;
+display: flex;
+/* justify-content: space-between; */
+/* border: 2px solid black; */
+margin-bottom: 1%;
+}
+.nav ul {
+width: 100%;
+display: flex;
+list-style: none;
+justify-content: flex-end;
+align-items: center;
+margin-right: 4%;
+}
+.nav a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+    padding:5vh;
+}
+.nav a:hover{
+    color: #08D3FF;
+}
+.nav h1{
+    margin-left: 5%;
+    font-size: 2vw;
+}
+.main{
+ color: white;
+ display: flex;
+ 
+ margin: 0 6% 0 5%;
+}
+.discription{
+    height: auto;
+    width: 60%;
+    /* border: 2px solid black; */
+    margin-right: 9%;
+}
+.discription h2{
+    padding: 5% 5% 1% 5%;
+    font-size: 3vw;
+
+}
+.discription h1{
+    padding: 1% 5%;
+    font-size: 3vw;
+}
+.discription h3{
+    padding: 1% 5%;
+    font-size: 2vw;
+}
+.main p{
+    text-align: left;
+    padding: 1% 5%;
+    font-size: 1.2vw;
+}
+.images img{
+    width: 7%;
+    margin-left: 8%;
+    cursor: pointer;
+}
+.glow{
+    width: 25vw;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+.glow img{
+    width: 100%;
+    height: auto;
+ margin-top: 20%;
+    border-radius: 100%;
+}
+ .download button{
+    margin-top: 5%;
+    /* margin-bottom: 5%; */
+    padding: 2% 4%;
+    border-radius: 50px;
+    border: none;
+    font-size: 2vw;
+    margin-left: 5%;
+    background-color: #08D3FF;
+    color: white;
+    font-weight: bold;
+    transition: filter 0.3s ease;
+ }
+ button:hover{
+    filter: blur(2px); 
+ }
