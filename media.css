@@ -1,0 +1,112 @@
+@media only screen and (max-width:768px){
+    *{
+        box-sizing: border-box;
+    }
+    /* nav part */
+    .menu{
+        display: block;
+    }
+    .main-nav{
+        display: flex;
+        flex-direction: column;
+        height:50vh;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        background-color: red;
+        padding: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .nav h1{
+        font-size: 2rem;
+    }
+    .nav ul{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+    .main-nav a{
+        font-size: 3rem
+    }
+    /* content part */
+    .topmain{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+        height: auto;
+    }
+    .glow img{
+        width: 60%;
+    }
+    .discription{
+        width: 100%;
+        margin: 0;
+        gap: 50px;
+    }
+    .topmain p{
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+    .images img{
+        width: 60px;
+        height: fit-content;
+    }
+    /* service section */
+    .service{
+        border: 2px solid white;
+    }
+    .service h1{
+        padding: 5% 0;
+    }
+    .services{
+        gap: 2%;
+        height: 85%;
+    }
+    /* about section */
+    .main{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .text{
+        width: 80vw;
+    }
+    .text h1{
+        text-align: center;
+    }
+    .imgcontainer{
+        margin-top: 15%;
+    }
+    /* contact section */
+    .contact{
+        border: 2px solid violet;
+    }
+    .containt{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        border: 2px solid green;
+    }
+    .contants{
+        width: 90%;
+        gap: 50px;
+        align-items: center;
+    }
+    .detail{
+        gap: 10px;
+    }
+    .form{
+        width: 90%;
+        height: auto;
+    }
+    .name,.mail{
+        height: 5vh;
+    }
+    .message{
+        height: 10vh;
+    }
+    .submit{
+        width: 15vw;
+    }
+}
