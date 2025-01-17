@@ -1,9 +1,138 @@
+@media only screen and (min-width:2560px){
+    html{
+        font-size: 30px;
+    }
+    .landing-page,.service,.about,.contact{
+        min-height:100vh;
+        width: auto;
+        /* border: 2px solid red; */
+    }
+    .service,.about,.contact{
+        padding:0;
+    }
+    .nav{
+        height: 10vh;
+        font-size: 3.1vh;
+        /* border: 2px solid red; */
+        margin-top: 10px;
+    }
+    .nav ul{
+        flex-basis: 30%;
+    }
+    .main-nav a{
+        font-size: 2.5vh;
+    }
+    .discription{
+        gap: 5vh;
+        margin-right: 8%;
+    }
+    .discription h2{
+        font-size: 5vh;
+    }
+    .discription h1{
+        font-size: 5vh;
+    }
+    .discription h3{
+        font-size: 5vh;
+    }
+    .discription p{
+        font-size: 3vh;
+    }
+    .download{
+        font-size: 2vh;
+    }
+    .images img{
+        width: 5%;
+        height: fit-content;
+    }
+    .glow img{
+        width: 25vw;
+    }
+    /* service section */
+    #heading{
+        margin-top: 5vh;
+        font-size: 5.5vh;
+    }
+    .service{
+        /* border: 2px solid red; */
+    }
+    .service h1{
+        font-size: 5vh;
+    }
+    .first-service img,.second-service img{
+        width: 5vh;
+    }
+    .first-service p,.second-service p{
+        font-size: 2.5vh;
+    }
+    .read1,.read2{
+        font-size: 2vh;
+    }
+    .services{
+        height: 85vh;
+    }
+    .first-service,.second-service{
+        width: 25vw;
+        height: 50vh;
+        gap: 2vh;
+    }
+    .first-service h1,.second-service h1{
+        font-size: 4vh;
+    }
+    /* about section */
+    .imgcontainer{
+        width: 35vw;
+    }
+    .text{
+        gap: 7vh;
+    }
+    .text h1{
+        font-size: 6vh;
+    }
+    .text p{
+        font-size: 2.8vh;
+    }
+    .stats{
+        gap: 5vh;
+    }
+    .skill-btn,.edu-btn{
+        font-size: 2vh;
+    }
+    /* contact section */
+    .contants h1{
+        font-size: 10vh;
+    }
+    .email a,.number p{
+        font-size: 2.6vh;
+    }
+    .email img,.number img{
+        width: 3vw;
+    }
+    .social-media2{
+        gap: 3vw;
+    }
+    .social-media2 img{
+        width: 3.9vw;
+    }
+    .form{
+        gap: 5vh;
+    }
+    .name::placeholder,.mail::placeholder,.message::placeholder{
+        font-size: 2vh;
+    }
+    .submit{
+        font-size: 2.2vh;
+    }
+
+}
+@media only screen and (max-width:2559px) and (min-width:1439px){
+
+}
 @media only screen and (max-width:1440px) and (min-width:769px){
     .landing-page,.service,.about,.contact{
         min-height: 100vh;
-        height: auto;
         width: auto;
-        padding: 50px 0;
+        /* padding: 50px 0; */
         /* border: 2px solid red; */
     }
     .about{
@@ -44,12 +173,12 @@
         height: auto;
     }
     .glow img{
-        width: 60%;
+        width: 40%;
     }
     .discription{
         width: 100%;
         margin: 0;
-        gap: 50px;
+        gap: 35px;
     }
     .topmain p{
         font-size: 1.5rem;
@@ -93,6 +222,7 @@
     }
     /* about section */
     .about{
+        padding: 0;
         border: 2px solid yellow;
     }
     .main{
@@ -106,7 +236,6 @@
         text-align: center;
     }
     .imgcontainer{
-        margin-top: 15%;
     }
     /* contact section */
     .contact{
@@ -153,174 +282,130 @@
     }
 }
 @media only screen and (max-width:768px) and (min-width:426px){
+    html{
+        font-size: 16px;
+    }
+    body{
+        padding: 0 5%;
+    }
     .landing-page,.service,.about,.contact{
-        min-height: 100vh;
-        height: auto;
-        width: auto;
-        padding: 50px 0;
+        min-height: auto;
+        width: 100%;
         /* border: 2px solid red; */
     }
-    .about{
-        height: 100%;
-    }
-    .menu{
-        display: block;
-    }
-    .main-nav{
-        display: flex;
-        flex-direction: column;
-        height:50vh;
-        position: fixed;
-        top: 0;
-        z-index: 999;
-        background-color: red;
-        padding: 0;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .nav h1{
-        font-size: 2rem;
+    .service,.about,.contact{
+        padding: 20px 0;
     }
     .nav ul{
         display: none;
-        justify-content: center;
-        align-items: center;
-        width: 70%;
     }
-    .main-nav a{
-        font-size: 3rem
+    .nav h1{
+        font-size: 1.7rem;
     }
-    /* content part */
+    .menu{
+        padding: 0;
+        display: block;
+    }
+    .menu img{
+        width:7vw ;
+    }
+    .landing-page{
+        /* height: 100vh; */
+        /* border: 2px solid red; */
+        margin-bottom: 5%;
+    }
     .topmain{
         display: flex;
         flex-direction: column-reverse;
-        padding: 0;
-        height: auto;
-    }
-    .glow img{
-        width: 60%;
     }
     .discription{
         width: 100%;
         margin: 0;
-        gap: 50px;
-    }
-    .topmain p{
-        font-size: 1.5rem;
-        line-height: 1.5;
     }
     .images img{
-        width: 60px;
+        width: 45px;
         height: fit-content;
     }
-    /* service section */
+    .glow img{
+        width: 45%;
+    }
+    /* ---------------------service section--------------------- */
     .service{
-        border: 2px solid white;
-        height: fit-content;
-    }
-    .service h1{
-        padding: 5% 0;
-    }
-    #heading{
-        font-size: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        /* height: 100vh; */
+        border: 2px solid red;
     }
     .services{
-        flex-wrap: wrap;
-        gap: 2%;
-        height: 60%;
+        border: 2px solid green;
+        flex-direction: column;
+        gap: 35px;
     }
     .first-service,.second-service{
-        width: 550px;
-        height: 555px;
+        width: 350px;
+        height: 360px;
+        gap: 25px;
     }
-    .first-service img,.second-service img{
-        width: 15%;
+    #heading{
+        font-size: 3rem;
     }
-    .first-service p,.second-service p{
-        font-size: 1.3rem;
+    .download{
+        width: 180px;
+        height: 70px;
+        font-size: 1.2rem;
     }
-    .first-service h1,.second-service h1{
-        font-size: 2.3rem;
-    }
-    .read1,.read2{
-        font-size: 1.5rem;
-    }
-    /* about section */
+    /* ---------------------about section--------------------- */
     .about{
-        border: 2px solid yellow;
+        padding: 0;
     }
     .main{
         flex-direction: column;
-        height: 100vh;
+    }
+    .imgcontainer{
+        width: 60vw;
     }
     .text{
-        width: 80vw;
+        width: 100%;
     }
     .text h1{
         text-align: center;
     }
-    .imgcontainer{
-        margin-top: 15%;
-    }
-    /* contact section */
-    .contact{
-        border: 2px solid violet;
-        height: auto;
-    }
+    /* ---------------------contact section--------------------- */
     .containt{
         display: flex;
         flex-direction: column;
-        height: auto;
-        border: 2px solid green;
+        gap: 20px;
     }
     .contants{
-        width: 90%;
-        gap: 50px;
-        align-items: center;
-    }
-    .contants h1{
-        font-size: 4rem;
+        width: 100%;
+        gap: 35px;
     }
     .detail{
-        gap: 40px;
-    }
-    .email,.number{
-        font-size: 1.5rem;
+        gap: 30px;
+        font-size: 1.3rem;
     }
     .form{
-        width: 90%;
+        width: 100%;
         height: auto;
+        gap: 32px;
+    }
+    .social-media2 img{
+        width: 50px;
     }
     .name,.mail{
-        height: 90px;
-    }
-    .message{
-        height: 200px;
+        height: 80px;
     }
     .name::placeholder,.mail::placeholder,.message::placeholder{
         font-size: 1rem;
     }
+    .message{
+        height: 190px;
+    }
     .submit{
-        font-size: 1.5rem;
-        width: 200px;
-        height: 100px;
-    }
-}
-@media only screen and (min-width:1441px){
-    .landing-page,.service,.about,.contact{
-        height: 100vh;
-        width: auto;
-        /* border: 2px solid red; */
-    }
-    .service,.about,.contact{
-        padding: 0;
-    }
-    .discription{
-        gap: 30px;
-    }
-    .images img{
-        width: 5%;
-        height: fit-content;
+        width: 150px;
+        height: 80px;
+        font-size: 1.4rem;
     }
 }
 @media only screen and (max-width:425px){
@@ -328,21 +413,28 @@
         font-size: 12px;
     }
     body{
-        padding: 0 10%;
+        padding: 0 5%;
     }
     .landing-page,.service,.about,.contact{
-        min-height: 100vh;
+        min-height: auto;
         width: 100%;
         /* border: 2px solid red; */
+    }
+    .service,.about,.contact{
+        padding: 20px 0;
     }
     .nav ul{
         display: none;
     }
+    .nav h1{
+        font-size: 1.7rem;
+    }
     .menu{
-        display: contents;
+        padding: 0;
+        display: block;
     }
     .menu img{
-        width:8vw ;
+        width:7vw ;
     }
     .landing-page{
         /* border: 2px solid red; */
@@ -358,7 +450,59 @@
     .images img{
         height: fit-content;
     }
+    /* ---------------------service section--------------------- */
+    .service{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .services{
+        gap: 20px;
+    }
+    .first-service,.second-service{
+        width: 285px;
+        height: 310px;
+    }
+    /* ---------------------about section--------------------- */
+    .main{
+        flex-direction: column;
+    }
     .imgcontainer{
-        width: 40vw;
+        width: 70vw;
+    }
+    .text{
+        width: 100%;
+    }
+    .text h1{
+        text-align: center;
+    }
+    /* ---------------------contact section--------------------- */
+    .containt{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contants{
+        width: 100%;
+        gap: 30px;
+    }
+    .detail{
+        gap: 25px;
+    }
+    .form{
+        width: 100%;
+    }
+    .social-media2 img{
+        width: 40px;
+    }
+    .name,.mail{
+        height: 50px;
+    }
+    .message{
+        height: 120px;
+    }
+    .submit{
+        width: 100px;
+        height: 50px;
     }
 }
