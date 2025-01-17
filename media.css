@@ -410,7 +410,7 @@
 }
 @media only screen and (max-width:425px){
     html{
-        font-size: 12px;
+        font-size: 8px;
     }
     body{
         padding: 0 5%;
@@ -459,9 +459,15 @@
     .services{
         gap: 20px;
     }
+    .first-service h1,.second-service h1{
+        font-size: 7vw;
+    }
+    .first-service img,.second-service img{
+        width: 8vw;
+    }
     .first-service,.second-service{
-        width: 285px;
-        height: 310px;
+        width: 80%;
+        height: 40vh;
     }
     /* ---------------------about section--------------------- */
     .main{
@@ -487,13 +493,20 @@
         gap: 30px;
     }
     .detail{
-        gap: 25px;
+        gap: 5vw;
     }
     .form{
         width: 100%;
     }
+    .email img,.number img{
+        width: 10vw;
+        
+    }
+    .social-media2{
+        gap: 6vw;
+    }
     .social-media2 img{
-        width: 40px;
+        width: 10vw;
     }
     .name,.mail{
         height: 50px;
