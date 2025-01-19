@@ -125,163 +125,133 @@
     }
 
 }
-@media only screen and (max-width:2559px) and (min-width:1439px){
-
-}
-@media only screen and (max-width:1440px) and (min-width:769px){
+@media only screen and (max-width:2560px) and (min-width:1441px){
+        html{
+        font-size: 30px;
+    }
     .landing-page,.service,.about,.contact{
-        min-height: 100vh;
+        min-height:100vh;
         width: auto;
-        /* padding: 50px 0; */
         /* border: 2px solid red; */
     }
-    .about{
-        height: 100%;
+    .service,.about,.contact{
+        padding:0;
     }
-    .menu{
-        display: block;
-    }
-    .main-nav{
-        display: flex;
-        flex-direction: column;
-        height:50vh;
-        position: fixed;
-        top: 0;
-        z-index: 999;
-        background-color: red;
-        padding: 0;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .nav h1{
-        font-size: 2rem;
+    .nav{
+        height: 10vh;
+        font-size: 3.1vh;
+        /* border: 2px solid red; */
+        margin-top: 10px;
     }
     .nav ul{
-        display: none;
-        justify-content: center;
-        align-items: center;
-        width: 70%;
+        flex-basis: 30%;
     }
     .main-nav a{
-        font-size: 3rem
-    }
-    /* content part */
-    .topmain{
-        display: flex;
-        flex-direction: column-reverse;
-        padding: 0;
-        height: auto;
-    }
-    .glow img{
-        width: 40%;
+        font-size: 2.5vh;
     }
     .discription{
-        width: 100%;
-        margin: 0;
-        gap: 35px;
+        gap: 5vh;
+        margin-right: 5%;
     }
-    .topmain p{
-        font-size: 1.5rem;
-        line-height: 1.5;
+    .discription h2{
+        font-size: 5vh;
+    }
+    .discription h1{
+        font-size: 5vh;
+    }
+    .discription h3{
+        font-size: 5vh;
+    }
+    .discription p{
+        font-size: 3vh;
+    }
+    .download{
+        font-size: 2vh;
     }
     .images img{
-        width: 60px;
+        width: 5%;
         height: fit-content;
+    }
+    .glow img{
+        width: 24vw;
     }
     /* service section */
+    #heading{
+        margin-top: 5vh;
+        font-size: 5.5vh;
+    }
     .service{
-        border: 2px solid white;
-        height: fit-content;
+        /* border: 2px solid red; */
     }
     .service h1{
-        padding: 5% 0;
-    }
-    #heading{
-        font-size: 4rem;
-    }
-    .services{
-        flex-wrap: wrap;
-        gap: 2%;
-        height: 60%;
-    }
-    .first-service,.second-service{
-        width: 550px;
-        height: 555px;
+        font-size: 5vh;
     }
     .first-service img,.second-service img{
-        width: 15%;
+        width: 5vh;
     }
     .first-service p,.second-service p{
-        font-size: 1.3rem;
-    }
-    .first-service h1,.second-service h1{
-        font-size: 2.3rem;
+        font-size: 2.5vh;
     }
     .read1,.read2{
-        font-size: 1.5rem;
+        font-size: 2vh;
+    }
+    .services{
+        height: 85vh;
+    }
+    .first-service,.second-service{
+        width: 25vw;
+        height: 50vh;
+        gap: 2vh;
+    }
+    .first-service h1,.second-service h1{
+        font-size: 4vh;
     }
     /* about section */
-    .about{
-        padding: 0;
-        border: 2px solid yellow;
-    }
-    .main{
-        flex-direction: column;
-        height: 100vh;
+    .imgcontainer{
+        width: 35vw;
     }
     .text{
-        width: 80vw;
+        gap: 7vh;
     }
     .text h1{
-        text-align: center;
+        font-size: 6vh;
     }
-    .imgcontainer{
+    .text p{
+        font-size: 2.8vh;
+    }
+    .stats{
+        gap: 5vh;
+    }
+    .skill-btn,.edu-btn{
+        font-size: 2vh;
     }
     /* contact section */
-    .contact{
-        border: 2px solid violet;
-        height: auto;
-    }
-    .containt{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        border: 2px solid green;
-    }
-    .contants{
-        width: 90%;
-        gap: 50px;
-        align-items: center;
-    }
     .contants h1{
-        font-size: 4rem;
+        font-size: 10vh;
     }
-    .detail{
-        gap: 40px;
+    .email a,.number p{
+        font-size: 2.6vh;
     }
-    .email,.number{
-        font-size: 1.5rem;
+    .email img,.number img{
+        width: 3vw;
+    }
+    .social-media2{
+        gap: 3vw;
+    }
+    .social-media2 img{
+        width: 3.9vw;
     }
     .form{
-        width: 90%;
-        height: auto;
-    }
-    .name,.mail{
-        height: 90px;
-    }
-    .message{
-        height: 200px;
+        gap: 5vh;
     }
     .name::placeholder,.mail::placeholder,.message::placeholder{
-        font-size: 1rem;
+        font-size: 2vh;
     }
     .submit{
-        font-size: 1.5rem;
-        width: 200px;
-        height: 100px;
+        font-size: 2.2vh;
     }
 }
-@media only screen and (max-width:768px) and (min-width:426px){
+@media only screen and (max-width:1440px) and (min-width:769px){
     html{
         font-size: 16px;
     }
@@ -289,25 +259,30 @@
         padding: 0 5%;
     }
     .landing-page,.service,.about,.contact{
-        min-height: auto;
+        min-height: 100vh;
         width: 100%;
         /* border: 2px solid red; */
+        padding: 0;
     }
-    .service,.about,.contact{
-        padding: 20px 0;
+    .service,.about{
+       margin-bottom: 5%;
     }
-    .nav ul{
-        display: none;
+    .nav{
+        justify-content: flex-start;
+        gap: 53.8vw;
     }
     .nav h1{
-        font-size: 1.7rem;
+        font-size: 2.5vw;
     }
     .menu{
-        padding: 0;
-        display: block;
+        display: none;
     }
-    .menu img{
-        width:7vw ;
+    .nav ul li {
+        padding: 0;
+        margin: 0 5%;
+    }
+    .main-nav a{
+        font-size: 1.2vw;
     }
     .landing-page{
         /* height: 100vh; */
@@ -322,13 +297,35 @@
         width: 100%;
         margin: 0;
     }
+    .discription h2{
+        font-size: 2.5vw;
+    }
+    .discription h1{
+        font-size: 2.5vw;
+    }
+    .discription h3{
+        font-size: 2.5vw;
+    }
+    .discription p{
+        font-size: 1.5vw;
+    }
     .images img{
-        width: 45px;
+        width: 4%;
         height: fit-content;
     }
-    .glow img{
-        width: 45%;
+    .download{
+        font-size: 1.5vw;
+        width: 15vw;
+        height: 7vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+    .glow img{
+        width: 22vw;
+        margin-bottom: 3%;
+    }
+
     /* ---------------------service section--------------------- */
     .service{
         display: flex;
@@ -339,21 +336,167 @@
     }
     .services{
         border: 2px solid green;
+        gap: 15vw;
+        height: 90vh;
+    }
+    .first-service,.second-service{
+        width: 25vw;
+        height: 50vh;
+        gap: 2vh;
+    }
+    .first-service h1,.second-service h1{
+        font-size: clamp(6px,2vw, 30px);
+    }
+    .first-service p,.second-service p{
+        font-size: clamp(12px,1.4vw, 18px);
+    }
+    .first-service img,.second-service img{
+        width: 13%;
+    }
+    .read1,.read2{
+        font-size: clamp(12px, 1.2vw, 18px);
+    }
+    #heading{
+        font-size: 3vw;
+    }
+    /* ---------------------about section--------------------- */
+    .imgcontainer{
+        width: 35vw;
+    }
+    .text{
+        gap: 7vh;
+    }
+    .text h1{
+        font-size: 3vw;
+    }
+    .text p{
+        font-size: 1.4vw;
+    }
+    .stats{
+        gap: 5vh;
+    }
+    /* ---------------------contact section--------------------- */
+    .contants h1{
+        font-size: 5vw;
+    }
+    .email a,.number p{
+        font-size: 1.2vw;
+    }
+    .email img,.number img{
+        width: 3vw;
+    }
+    .social-media2{
+        gap: 3vw;
+    }
+    .social-media2 img{
+        width: 3.9vw;
+    }
+    .form{
+        gap: 5vh;
+    }
+    .name::placeholder,.mail::placeholder,.message::placeholder{
+        font-size: 2vh;
+    }
+    .submit{
+        font-size: 1.3vw;
+    }
+}
+@media only screen and (max-width:768px) and (min-width:426px){
+    html{
+        font-size: 16px;
+    }
+    body{
+        padding: 0 5%;
+    }
+    .landing-page,.service,.about,.contact{
+        min-height: 100vh;
+        width: 100%;
+        /* border: 2px solid red; */
+        padding: 0;
+    }
+    .service,.about,.contact{
+       margin-bottom: 5%;
+    }
+    .nav ul{
+        display: none;
+    }
+    .nav h1{
+        font-size: 3.5vw;
+    }
+    .menu{
+        width: 4vw;
+        padding: 0;
+        display: block;
+        /* border: 2px solid red; */
+    }
+    .menu img{
+        width:4vw ;
+    }
+    .landing-page{
+        /* height: 100vh; */
+        /* border: 2px solid red; */
+        margin-bottom: 5%;
+    }
+    .topmain{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .discription{
+        width: 100%;
+        margin: 0;
+    }
+    .discription h2{
+        font-size: 4vw;
+    }
+    .discription h1{
+        font-size: 4vw;
+    }
+    .discription h3{
+        font-size: 4vw;
+    }
+    .discription p{
+        font-size: 2.5vw;
+    }
+    .images img{
+        width: 7%;
+        height: fit-content;
+    }
+    .download{
+        font-size: 2vw;
+        width: 20vw;
+        height: 7.5vh;
+    }
+    .glow img{
+        width: 40vw;
+        margin-bottom: 3%;
+    }
+
+    /* ---------------------service section--------------------- */
+    .service{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        /* height: 100vh; */
+        /* border: 2px solid red; */
+    }
+    .services{
+        /* border: 2px solid green; */
         flex-direction: column;
         gap: 35px;
     }
     .first-service,.second-service{
-        width: 350px;
-        height: 360px;
+        width: 300px;
+        height: 310px;
         gap: 25px;
     }
-    #heading{
-        font-size: 3rem;
+    .first-service h1,.second-service h1{
+        font-size: 1.5em;
     }
-    .download{
-        width: 180px;
-        height: 70px;
-        font-size: 1.2rem;
+    .first-service p,.second-service p{
+        font-size: 0.9em;
+    }
+    #heading{
+        font-size: 2rem;
     }
     /* ---------------------about section--------------------- */
     .about{
@@ -363,13 +506,20 @@
         flex-direction: column;
     }
     .imgcontainer{
-        width: 60vw;
+        width: 50vw;
     }
     .text{
         width: 100%;
     }
     .text h1{
+        font-size: 2rem;
         text-align: center;
+    }
+    .text p{
+        font-size: 1rem;
+    }
+    .uiux p,.web-dev p{
+        font-size: 1rem;
     }
     /* ---------------------contact section--------------------- */
     .containt{
@@ -381,9 +531,14 @@
         width: 100%;
         gap: 35px;
     }
+    .contants h1{
+        font-size: 5vw;
+    }
     .detail{
         gap: 30px;
-        font-size: 1.3rem;
+    }
+    .email a,.number p{
+        font-size: 2vw;
     }
     .form{
         width: 100%;
@@ -394,18 +549,18 @@
         width: 50px;
     }
     .name,.mail{
-        height: 80px;
+        height: 65px;
     }
     .name::placeholder,.mail::placeholder,.message::placeholder{
-        font-size: 1rem;
+        font-size: 2vw;
     }
     .message{
         height: 190px;
     }
     .submit{
-        width: 150px;
-        height: 80px;
-        font-size: 1.4rem;
+        width: 20vw;
+        height: 8vh;
+        font-size: 2.2vw;
     }
 }
 @media only screen and (max-width:425px){
@@ -416,7 +571,7 @@
         padding: 0 5%;
     }
     .landing-page,.service,.about,.contact{
-        min-height: auto;
+        min-height: 100vh;
         width: 100%;
         /* border: 2px solid red; */
     }
@@ -448,9 +603,34 @@
         margin: 0;
     }
     .images img{
+        width: 10vw;
         height: fit-content;
     }
+    .discription h2{
+        font-size: 2rem;
+    }
+    .discription h1{
+        font-size: 2rem;
+    }
+    .discription h3{
+        font-size:2rem;
+    }
+    .discription p{
+        font-size: 1.1rem;
+        line-height: 2.5vh;
+    }
+    .glow img{
+        width: 65%;
+    }
+    .download{
+        width: 36vw;
+        height: 5vh;
+        font-size: 1.5em;
+    }
     /* ---------------------service section--------------------- */
+    #heading{
+        font-size: 3rem;
+    }
     .service{
         display: flex;
         flex-direction: column;
@@ -465,13 +645,20 @@
     .first-service img,.second-service img{
         width: 8vw;
     }
+    .first-service p,.second-service p{
+       font-size: 1.2rem;
+    }
     .first-service,.second-service{
         width: 80%;
         height: 40vh;
     }
+    .read1 , .read2{
+        font-size: 1.2rem;
+    }
     /* ---------------------about section--------------------- */
     .main{
         flex-direction: column;
+        gap: 4vh;
     }
     .imgcontainer{
         width: 70vw;
@@ -481,6 +668,10 @@
     }
     .text h1{
         text-align: center;
+        margin-bottom: 3%;
+    }
+    .stats{
+        gap: 20px;
     }
     /* ---------------------contact section--------------------- */
     .containt{
@@ -497,6 +688,7 @@
     }
     .form{
         width: 100%;
+        gap: 20px;
     }
     .email img,.number img{
         width: 10vw;
@@ -509,13 +701,16 @@
         width: 10vw;
     }
     .name,.mail{
-        height: 50px;
+        height: 45px;
+        padding: 5%;
     }
     .message{
         height: 120px;
+        padding: 5%;
     }
     .submit{
-        width: 100px;
-        height: 50px;
+        width: 80px;
+        height: 35px;
+        font-size: 1.5rem;
     }
 }

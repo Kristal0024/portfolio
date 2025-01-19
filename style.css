@@ -13,7 +13,7 @@ html{
 }
 body{
     background-color: #0e112c;
-    /* border: 2px solid white; */
+    border: 2px solid white;
     padding: 0 5%;
     color: white;
 }
