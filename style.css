@@ -13,7 +13,7 @@ html{
 }
 body{
     background-color: #0e112c;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     padding: 0 5%;
     color: white;
 }
@@ -23,9 +23,10 @@ body{
 .nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 10vh;
     /* border: 2px solid red; */
+    gap: 20vw;
 }
 .main-nav a{
     text-decoration: none;
@@ -35,11 +36,16 @@ body{
     color: #08D3FF;
 }
 .nav ul{
+    width: 65vw;
     list-style-type: none;
-    width: 21vw;
     text-decoration: none;
+    gap: 1vw;
     display: flex;
-    gap: 5%;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.nav ul li{
+    display: inline-block;
 }
 .nav li{
    padding: 0 3%;
