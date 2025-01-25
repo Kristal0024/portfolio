@@ -284,6 +284,62 @@
         right: 0px;
         top: 22px;
     }
+    .nav img{
+        display: block;
+    }
+    .nav ul{
+        display: flex;
+        flex-direction: column;
+        background-color:  #111327;;
+        position: absolute;
+        top: 0;
+        right: -5%;
+        height: 100vh;
+        text-align: center;
+        justify-content: flex-start;
+        gap: 50px;
+        z-index: 999;
+    }
+    .main-nav a{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 15px;
+    }
+    .main-nav a img{
+        position: absolute;
+        left: 50px;
+    }
+    .cross-img{
+        width: 100%;
+        height: 8vh;
+    }
+    .cross{
+        margin: 2% 1%;
+        width: 10vw;
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .main-nav li{
+        height: 50px;
+        display: flex;
+    }
+    .list{
+        display: none;
+        position: relative;
+    }
+    .menu{
+        display: contents;
+        cursor: pointer;
+    }
+    .nav li a image{
+        position: absolute;
+        top: 5%;
+        left: 25px;
+    }
     .nav{
         justify-content: space-between;
         position: relative;
@@ -509,9 +565,6 @@
     .list{
         display: none;
         position: relative;
-    }
-    .list.active{
-        display: block;
     }
     .menu{
         display: contents;
