@@ -185,7 +185,7 @@
     min-height: 100vh;
    }
 }
-@media only screen and (max-width:1440px) and (min-width:768px){
+@media only screen and (max-width:1440px) and (min-width:900px){
     /* landing page */
     .body{
         width: 100%;
@@ -259,13 +259,195 @@
     .about{
         min-height: 100vh;
     }
+    .contact{
+        min-height: 100vh;
+    }
 }
-@media only screen and (max-width:768px) {
-    /* landing section */
-    .body{
+@media only screen and (max-width:900px) and (min-width:409px) {
+    .landing-page,.service,.about{
+        min-height:100vh ;
+    }
+    .nav h1{
+        font-size: clamp(10px, 4vw, 40px);
+    }
+    .nav ul{
+        display: none;
+    }
+    .menu{
+        display: contents;
+        
+    }
+    .menu img{
+        width: 5vw;
+        height: fit-content;
+        position: none;
+        right: 0px;
+        top: 22px;
+    }
+    .nav{
+        justify-content: space-between;
+        position: relative;
+    }
+    .topmain{
+        flex-direction: column-reverse;
+    }
+    .glow{
+        width: 55vw;
+        height:40vw;
+        position: relative;
+        margin: 0 auto;
+    }
+    .glow img{
+        position: absolute;
+        width: 75%;
+        top: 0%;
+    }
+    .discription{
+        width: 100%;
+        margin: 0;
+    }
+    .discription h2{
+        font-size: clamp(20px, 5vw, 50px);
+
+   }
+   .discription h1{
+       font-size: clamp(20px, 5vw, 50px);
+
+   }
+   .discription h3{
+       font-size: clamp(20px, 5vw, 50px);
+   }
+   .discription p{
+       font-size: clamp(10px, 3vw, 20px);
+   }
+   .images img{
+    width: 6vw;
+    height: fit-content;
+   }
+   .download{
+       font-size: clamp(10px, 2vw, 20px);
+   }
+    /* service section */
+    #heading{
+        font-size: clamp(16px, 5vw, 40px);
+    }
+    .service{
+        padding: 0;
+       height: 130vh;
+    }
+    .services{
+        height: 120vh;
+        gap: 40px;
+        flex-direction: column;
+
+    }
+    .first-service,.second-service{
+        width: 45vw;
+        height: 45vh;
+        gap: 2vh;
+    }
+    .first-service h1,.second-service h1{
+        font-size: clamp(16px,4vw,30px);
+    }
+    .first-service p,.second-service p{
+        font-size: clamp(12px,2vw,20px);
+    }
+    .read1,.read2{
+        height: 2vh;
+        display: flex;
+        align-items: center;
+        font-size: clamp(12px,1.5vw,20px);
+    }
+
+
+
+
+    .about{
+        flex-grow: 1;
+        min-height: 100vh;
+        margin-bottom: 3vh;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .imgcontainer{
+        width: 55vw;
+        /* border: 2px solid red; */
+    }
+    .imagecontainer img{
+        width: 5%;
+    }
+    .text{
+        width: 100%;
+    }
+    .text h1{
+        margin-top: 5vh;
+        font-size: clamp(16px,6vw,100px);
+        text-align: center;
+    }
+    .text p{
+        font-size: clamp(10px, 3vw, 20px);
+    }
+    .skill-btn,.edu-btn{
+        font-size: clamp(13px, 3vw, 20px);
+    }
+    .uiux h4,.web-dev h4{
+        font-size: clamp(10px, 3vw, 20px);
+    }
+    .contact{
+        margin-bottom: 2vh;
+        flex-grow: 1;
+    }
+    .containt{
+        flex-direction: column;
+    }
+    .contants{
+        width: 100%;
+        gap:4vh;
+    }
+    .contants h1{
+        font-size: clamp(16px,6vw,100px);
+    }
+    .detail{
+        gap: 3vh;
+    }
+    .email a,.number p{
+        font-size: clamp(12px,2vw,20px);
+    }
+    .email img,.number img{
+        width: 7vw;
+    }
+    .social-media2{
+        gap: 6vw;
+    }
+    .social-media2 img{
+        width: 7vw;
+    }
+    .form{
+        width: 100%;
+        margin-top: 4vh;
+        gap: 3vh;
+    }
+    .name,.mail{
+        height: 8vh;
+    }
+    .message{
+        height: 30vh;
+    }
+    .name::placeholder,.mail::placeholder,.message::placeholder{
+        font-size: clamp(12px,2vw,20px);
+    }
+    .submit{
+        width: 22vw;
+        font-size: clamp(12px,3vw,20px);
+        padding: 3%;
+    } 
+}
+@media only screen and (max-width:409px){
+       /* landing section */
+       .body{
         width: 100%;
         height: 100vh;
-
     }
     .landing-page{
         position: relative;
@@ -276,35 +458,104 @@
         padding: 0;
     }
     .nav{
-        justify-content: flex-start;
+        justify-content: space-between;
         margin-bottom: 5px;
     }
     .nav h1{
         font-size: clamp(10px, 5vw, 40px);
     }
-    .main-nav a{
-        display: none;
+    .nav img{
+        display: block;
+    }
+    .nav ul{
+        display: flex;
+        flex-direction: column;
+        background-color:  #111327;;
+        position: absolute;
+        top: 0;
+        right: -5%;
+        height: 100vh;
+        text-align: center;
+        justify-content: flex-start;
+        gap: 50px;
     }
     .main-nav a{
-        font-size: 0.7rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 15px;
+    }
+    .main-nav a img{
+        position: absolute;
+        left: 50px;
+    }
+    .cross-img{
+        width: 100%;
+        height: 8vh;
+    }
+    .cross{
+        margin: 2% 1%;
+        width: 10vw;
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .main-nav li{
+        height: 50px;
+        display: flex;
+    }
+    .list{
+        display: none;
+        position: relative;
+    }
+    .list.active{
+        display: block;
+    }
+    .menu{
+        display: contents;
+        cursor: pointer;
+    }
+    .nav li a image{
+        position: absolute;
+        top: 5%;
+        left: 25px;
+    }
+    .menu img{
+       right: 0;
+       position: absolute;
+       width: 20px;
+       top: 21px;
     }
     .topmain{
         flex-direction: column-reverse;
         gap: 10px;
     }
+    .glow{
+        height: 30vh;
+    }
     .glow img{
-        width: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
         max-width: 300px;
     }
     .discription{
         margin: 0;
         width: 100%;
+        gap: 1vh;
+        height: 50vh;
+        align-items: flex-start;
     }
     .discription h2{
          font-size: clamp(20px, 3vw, 40px);
+
     }
     .discription h1{
         font-size: clamp(20px, 3vw, 40px);
+
     }
     .discription h3{
         font-size: clamp(20px, 3vw, 40px);
@@ -327,8 +578,8 @@
        margin-bottom: 5vh;
     }
     .services{
-        height: 100vh;
-        gap: 30px;
+        height: 80vh;
+        gap: 3vh;
     }
     #heading{
         font-size: clamp(16px,6vw,100px);
@@ -336,9 +587,9 @@
     }
     .first-service,.second-service{
         max-width: 300px;
-        width: 80vw;
+        width: 70vw;
         max-height: 315px;
-        height: 45vh;
+        height: 40vh;
         gap: 2vh;
     }
     .first-service h1,.second-service h1{
@@ -370,6 +621,7 @@
         width: 100%;
     }
     .text h1{
+        margin-top: 5vh;
         font-size: clamp(16px,6vw,100px);
         text-align: center;
     }
@@ -384,6 +636,7 @@
     }
     /* contact section */
     .contact{
+        margin-bottom: 2vh;
         flex-grow: 1;
     }
     .containt{
@@ -413,6 +666,8 @@
     }
     .form{
         width: 100%;
+        margin-top: 4vh;
+        gap: 3vh;
     }
     .name,.mail{
         height: 8vh;
@@ -427,5 +682,5 @@
         width: 22vw;
         font-size: clamp(12px,3vw,20px);
         padding: 3%;
-    }
+    } 
 }
