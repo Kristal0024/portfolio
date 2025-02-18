@@ -23,6 +23,7 @@
         font-size: 2.5vh;
     }
     .discription{
+        height: fit-content;
         gap: 5vh;
         margin-right: 8%;
     }
@@ -53,9 +54,9 @@
         margin-top: 5vh;
         font-size: 5.5vh;
     }
-    .service{
-        /* border: 2px solid red; */
-    }
+    #service {
+        scroll-margin-top: 340px; /* Adjust 60px to the height of your fixed header */
+      }
     .service h1{
         font-size: 5vh;
     }
@@ -174,6 +175,9 @@
    .service{
     height: 100vh;
    }
+   #service {
+    scroll-margin-top: 180px; /* Adjust 60px to the height of your fixed header */
+  }
    .services{
     height: 90vh;
    }
@@ -232,10 +236,12 @@
     /* service section */
     .service{
         min-height: 100vh;
-       padding-top: 5vh;
+       /* padding-top: 5vh; */
     }
+    #service {
+        scroll-margin-top: 180px; /* Adjust 60px to the height of your fixed header */
+      }
     .services{
-        height: 80vh;
         flex-wrap: nowrap;
         gap: 20vw;
     }
@@ -627,8 +633,9 @@
     /* service section */
     .service{
        flex-grow: 1;
-       margin-bottom: 20px;
        margin-bottom: 5vh;
+       height: fit-content;
+       min-height: 100vh;
     }
     .services{
         height: 80vh;
