@@ -176,7 +176,7 @@
     height: 100vh;
    }
    #service {
-    scroll-margin-top: 180px; /* Adjust 60px to the height of your fixed header */
+    scroll-margin-top: 10px; /* Adjust 60px to the height of your fixed header */
   }
    .services{
     height: 90vh;
@@ -269,9 +269,13 @@
         min-height: 100vh;
     }
 }
-@media only screen and (max-width:900px) and (min-width:409px) {
-    .landing-page,.service,.about{
+@media only screen and (max-width:900px) and (min-width:575px) {
+    .service,.about.contact{
         min-height:100vh ;
+    }
+    .landing-page{
+        height: 100vh;
+        /* border: 2px solid red; */
     }
     .nav h1{
         font-size: clamp(10px, 4vw, 40px);
@@ -294,6 +298,7 @@
         display: block;
     }
     .nav ul{
+        /* border: 2px solid pink; */
         display: flex;
         flex-direction: column;
         background-color:  #111327;;
@@ -305,6 +310,7 @@
         justify-content: flex-start;
         gap: 50px;
         z-index: 999;
+        width: 70%;
     }
     .main-nav a{
         position: relative;
@@ -330,8 +336,11 @@
         right: 0;
     }
     .main-nav li{
+        width: 100%;
         height: 50px;
         display: flex;
+        /* border: 2px solid white; */
+        position: relative;
     }
     .list{
         display: none;
@@ -341,46 +350,50 @@
         display: contents;
         cursor: pointer;
     }
-    .nav li a image{
-        position: absolute;
-        top: 5%;
-        left: 25px;
-    }
+
     .nav{
+        height: 10%;
         justify-content: space-between;
         position: relative;
+        /* border: 2px solid purple; */
+        margin-bottom:5% ;
     }
     .topmain{
         flex-direction: column-reverse;
+        /* border: 3px solid blue; */
+        height: 90%;
+        margin: 0;
+        padding: 0;
     }
     .glow{
-        width: 55vw;
-        height:40vw;
-        position: relative;
-        margin: 0 auto;
+        /* border: 2px solid white; */
+        width: 40%;
+        height:40%;
+        margin:auto;
     }
     .glow img{
-        position: absolute;
-        width: 75%;
+        width: 100%;
         top: 0%;
     }
     .discription{
+        /* border: 2px solid green; */
         width: 100%;
-        margin: 0;
+        gap: 0;
+        height: 70%;
     }
     .discription h2{
-        font-size: clamp(20px, 5vw, 50px);
+        font-size: clamp(20px, 4vw, 50px);
 
    }
    .discription h1{
-       font-size: clamp(20px, 5vw, 50px);
+       font-size: clamp(20px, 4vw, 50px);
 
    }
    .discription h3{
-       font-size: clamp(20px, 5vw, 50px);
+       font-size: clamp(20px, 4vw, 50px);
    }
    .discription p{
-       font-size: clamp(10px, 3vw, 20px);
+       font-size: clamp(10px, 2.5vw, 20px);
    }
    .images img{
     width: 6vw;
@@ -457,6 +470,7 @@
         font-size: clamp(10px, 3vw, 20px);
     }
     .contact{
+        /* border: 2px solid white; */
         margin-bottom: 2vh;
         flex-grow: 1;
     }
@@ -505,15 +519,14 @@
         padding: 3%;
     } 
 }
-@media only screen and (max-width:409px){
+@media only screen and (max-width:574px){
        /* landing section */
        .body{
         width: 100%;
-        height: 100vh;
     }
     .landing-page{
-        position: relative;
-        min-height: 100vh;
+        /* border: 2px solid; */
+        min-height: 100%;
         margin-bottom: 5vh;
     }
     .service,.about,.contact{
@@ -522,6 +535,9 @@
     .nav{
         justify-content: space-between;
         margin-bottom: 5px;
+        /* border: 2px solid purple; */
+        height: 10%;
+        margin: 0;
     }
     .nav h1{
         font-size: clamp(10px, 5vw, 40px);
@@ -540,6 +556,8 @@
         text-align: center;
         justify-content: flex-start;
         gap: 50px;
+        width: 70%;
+        /* border: 2px solid red; */
     }
     .main-nav a{
         position: relative;
@@ -565,6 +583,7 @@
         right: 0;
     }
     .main-nav li{
+        width: 100%;
         height: 50px;
         display: flex;
     }
@@ -589,23 +608,25 @@
     }
     .topmain{
         flex-direction: column-reverse;
-        gap: 10px;
+        height: 90%;
+        margin: 0;
     }
     .glow{
-        height: 30vh;
+        /* border: 2px solid pink; */
+        margin: 0;
+        height: 50%;
     }
     .glow img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50vw;
-        max-width: 300px;
+        margin: 0;
+        width: 50%;
+        /* height: 50%; */
+        /* max-width: 300px; */
     }
     .discription{
-        margin: 0;
+        /* border: 2px solid white; */
         width: 100%;
         gap: 1vh;
-        height: 50vh;
+        height: 60%;
         align-items: flex-start;
     }
     .discription h2{
