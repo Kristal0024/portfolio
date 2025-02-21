@@ -557,6 +557,7 @@
         justify-content: flex-start;
         gap: 50px;
         width: 70%;
+        z-index: 1;
         /* border: 2px solid red; */
     }
     .main-nav a{
