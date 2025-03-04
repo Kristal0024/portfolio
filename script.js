@@ -52,4 +52,28 @@ edu.addEventListener('click',()=>{
     uiuxDescription.textContent="Oxford college butwal,2022 passout"
     webHeading.textContent="Bachelor's"
     webDescription.textContent="Bim, Oxford college, Currently running"
-})
+});
+document.querySelector(".form").addEventListener("submit",function(event){
+    console.log("form submited");
+    let name=document.querySelector(".name").value.trim();
+    let email=document.querySelector(".mail").value.trim();
+    let message=document.querySelector(".message").value.trim();
+    console.log("Email entered:", email); 
+    let emailpattern=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    console.log("Regex result:", emailpattern.test(email));
+    if(name===""){
+        alert("please enter your name");
+        event.preventDefault();
+        return;
+    }
+    if(!emailpattern.test(email)){
+        alert("please enter a valid email");
+        event.preventDefault();
+        return;
+    }
+    if(message===""){
+        alert("message field cannot be empty");
+        event.preventDefault();
+        return;
+    }
+});
