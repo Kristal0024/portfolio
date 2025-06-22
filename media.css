@@ -2,8 +2,8 @@
     html{
         font-size: 30px;
     }
-    .landing-page,.service,.about,.contact{
-        min-height:100vh;
+    #landing-page,#service,#about,#contact{
+        height:100vh;
         width: auto;
         /* border: 2px solid red; */
     }
@@ -54,9 +54,6 @@
         margin-top: 5vh;
         font-size: 5.5vh;
     }
-    #service {
-        scroll-margin-top: 340px; /* Adjust 60px to the height of your fixed header */
-      }
     .service h1{
         font-size: 5vh;
     }
@@ -137,7 +134,7 @@
     .landing-page{
         width: 100%;
       position: relative;
-      min-height: 100vh;
+      height: 100vh;
       /* border: 2px solid red; */
     }
     .nav h1{
@@ -175,18 +172,16 @@
    .service{
     height: 100vh;
    }
-   #service {
-    scroll-margin-top: 10px; /* Adjust 60px to the height of your fixed header */
-  }
+
    .services{
-    height: 90vh;
+    height: 100vh;
    }
    /* about section */
    .about{
-    min-height: 100vh;
+    height: 100vh;
    }
    .contact{
-    min-height: 100vh;
+    height: 100vh;
    }
 }
 @media only screen and (max-width:1440px) and (min-width:900px){
@@ -238,9 +233,6 @@
         min-height: 100vh;
        /* padding-top: 5vh; */
     }
-    #service {
-        scroll-margin-top: 180px; /* Adjust 60px to the height of your fixed header */
-      }
     .services{
         flex-wrap: nowrap;
         gap: 20vw;

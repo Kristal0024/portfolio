@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
+    <!-- <link rel="stylesheet" href="media.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <!-- landing section -->
+ <div id="main">
+       <!-- landing section -->
    <section class="landing-page" id="landing-page"> 
     <div class="nav">
     <h1>Portfolio</h1>
     <!-- hamburger menu -->
-    <div class="menu">
+    <!-- <div class="menu">
         <img src="Menu Button.png" alt="">
-    </div>
+        <div class="cross-img"><img class="cross" src="icons8-cross-100.png" alt="cross"></div>
+    </div> -->
  <div class="list">
      <ul class="main-nav">
-        <div class="cross-img"><img class="cross" src="icons8-cross-100.png" alt="cross"></div>
         <li><a href="#landing-page"><img src="home.png" alt="">Home</a></li>
         <li><a href="#service"> <img src="services.png" alt="">Services</a></li>
         <li><a href="#about"><img src="About.png" alt=""> About</a></li>
@@ -124,7 +126,11 @@
         <button class="submit">Submit</button>
     </form>
 </div>
-<script src="script.js"></script>
 </section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
 </body>
 </html>
