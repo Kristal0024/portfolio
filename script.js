@@ -87,7 +87,7 @@ tl.from(".list a",{
     opacity:0,
     duration:1,
     stagger:0.3,
-    delay:1
+    delay:0.5
 })
 let locoScroll
 function loco(){
@@ -151,7 +151,7 @@ window.onbeforeunload = function () {
 gsap.to("#landing-page",{
     opacity:0,
     scale:0.5,
-    duration:3,
+    duration:2,
     scrollTrigger:{
         trigger:"#service",
         scroller:"#main",
@@ -163,7 +163,7 @@ gsap.to("#landing-page",{
 gsap.to("#service",{
     opacity:0,
     scale:0.5,
-    duration:3,
+    duration:2,
     scrollTrigger:{
         trigger:"#about",
         scroller:"#main",
@@ -175,7 +175,7 @@ gsap.to("#service",{
 gsap.to("#about",{
     opacity:0,
     scale:0.5,
-    duration:3,
+    duration:2,
     scrollTrigger:{
         trigger:"#contact",
         scroller:"#main",
@@ -184,3 +184,81 @@ gsap.to("#about",{
         scrub:1
     }
 })
+function splittedtext(){
+    let h1=document.querySelector(".nav h1");
+    var h1text=h1.textContent;
+let text=h1text.split("");
+let content="";
+text.forEach(function(elem){
+    content+=`<span>${elem}</span>`;
+})
+h1.innerHTML=content
+}
+
+splittedtext();
+gsap.from("#text span",{
+    y:10,
+    opacity:0,
+    duration:1,
+    delay:0.5,
+    stagger:0.15
+})
+function anothersplittedtext(){
+    let h3=document.querySelector(".colorfont")
+    let h3text=h3.textContent;
+    let h3split=h3text.split("")
+    let content=""
+    h3split.forEach(function(elem){
+        content+=`<span>${elem}<span>`
+    })
+    h3.innerHTML=content
+}
+anothersplittedtext();
+gsap.from(".colorfont span",{
+    opacity:0,
+    duration:0.2,
+    delay:2.5,
+    stagger:0.15,
+})
+let glow=document.querySelector(".glow")
+glow.addEventListener("mouseenter",function(){
+    gsap.to(".glow",{
+        scale:1.05,
+        duration:0.5,
+        delay:0.2
+    })
+       gsap.to(".glow img",{
+        boxShadow: "0 0 10px 10px rgba(137, 137, 137, 0.5)",
+        duration:0.5
+    })
+})
+glow.addEventListener("mouseleave",function(){
+    gsap.to(".glow",{
+        scale:1,
+        duration:0.5,
+    })
+    gsap.to(".glow img",{
+        boxShadow: "0 0 5px 5px rgba(137, 137, 137, 0.5)",
+        duration:0.5
+    })
+})
+function addHoverEffect(element){
+element.addEventListener("mouseenter",function(){
+    console.log("mouse entered")
+    gsap.to(element,{
+    scale:1.05,
+    duration:0.5,
+    ease:"power2.out"
+})
+})
+element.addEventListener("mouseleave",function(){
+    gsap.to(element,{
+        scale:1,
+        duration:0.5,
+        ease:"power2.out"
+    })
+})
+}
+let download=document.querySelector(".download")
+addHoverEffect(download);
+

@@ -27,19 +27,19 @@ body{
     height: 10vh;
     /* border: 2px solid blue; */
     width: 100%;
-    gap: 50%;
+    justify-content: space-between;
+    padding-top:10px ;
+}
+#text span{
+    display:inline-block;
+}
+.colorfont span{
+    display: inline-block;
 }
 .list{
     height: 100%;
-    width: 100%;
-}
-.list ul li{
-    display: inline-block;
-}
-.nav h1{
-    animation-name: spin;
-    animation-duration: 4s;
-    animation-delay: s;
+    /* border: 2px solid blue; */
+    width: 30vw;
 }
 .cross{
     display: none;
@@ -57,19 +57,19 @@ body{
     list-style-type: none;
     text-decoration: none;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
-    margin: 0;
-    padding: 0;
+    gap: 20%;
 }
 .topmain{
     opacity: 0; /* Start transparent */
     transform: translateX(-50px); /* Start shifted left */
-    animation: fade 3s ease-out forwards; /* 2-second animation */
+    animation: fade 2s ease-out forwards; /* 2-second animation */
     animation-delay: 1s;
     height: 70%;
     margin-top: 5%;
     display: flex;
+    gap: 10%;
 }
 .discription{
     /* border: 2px solid white; */
@@ -112,31 +112,16 @@ body{
     color: white;
     font-weight: 500;
     text-align: center;
+    display: inline-block;
 }
 .glow{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
 }
 .glow img{
     width: 80%;
     border-radius: 50%;
     box-shadow: 0 0 5px 5px rgba(137, 137, 137, 0.5);
     margin-bottom: 50px;
-}
-@keyframes spin{
-    0%{
-        opacity: 0;
-    }
-    50%{
-        scale: 1.3;
-        opacity: 0,5;
-    }
-    100%{
-        opacity: 1;
-        transform: rotate(360deg);
-    }
 }
 @keyframes blink{
     50%{
@@ -159,7 +144,7 @@ body{
     font-size: 2rem;
     margin-top: 2%;
 }
-span{
+.colorfont{
     color: #08D3FF;
 }
 .services{
