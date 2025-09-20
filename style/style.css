@@ -1,0 +1,380 @@
+@font-face {
+    font-family: poppins;
+    src: url(../font/Poppins-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    background-color:#101010;
+    color: white;
+    /* border: 2px solid white; */
+}
+#main{
+        margin: 0 5%;
+}
+.backgroundimg{
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+/* border: 2px solid white; */
+margin: 0 -5%;
+background-image: url(../image/header.jpg);
+background-size: cover;
+background-position:center;
+/* background-repeat: no-repeat; */
+z-index: 0;
+}
+.landing-page{
+        position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+.menu{
+    display: none;
+}
+nav, .topmain, .discription {
+    position: relative;      /* content above background */
+    z-index: 1;
+}
+nav{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.portfolio{
+cursor: default;
+}
+.list{
+    width: 40%;
+}
+ul{
+    display: flex;
+    gap: 2%;
+     justify-content: space-between;
+     align-items: center;
+     height: 100%;
+}
+.main-nav img{
+    display: none;
+}
+.list ul li{
+cursor: pointer;
+padding: 20px;
+     list-style-type: none;
+}
+.list ul li a{
+text-decoration: none;
+color: white;
+}
+.list ul li a:hover{
+    color: #08D3FF;
+    transition: color 0.3s;
+}
+.topmain{
+    height: 90vh;
+    /* border: 2px solid green; */
+    margin: 0 !important;
+    display: flex;
+}
+.discription{
+    width: 60%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+.discription h2{
+    font-size: 30px;
+}
+.discription h1{
+    font-size: 40px;
+}
+.discription h3{
+    font-size: 30px;
+}
+.discription p{
+    line-height: 1.5;
+}
+.colorfont{
+    color: #08D3FF;
+}
+.images{
+    display: flex;
+    gap: 20px;
+}
+.images span{
+   height: 45px;
+   width: 45px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   border: 2px solid transparent;
+       transition: border-color 0.3s ease-in-out;
+           cursor: pointer;
+}
+.images span:hover{
+    border-color:#08D3FF;
+
+}
+.images i{
+    color: #08D3FF;
+
+}
+.download{
+    padding: 2% 3% 2.2% 3%;
+    font-size: 1rem;
+    background-color: #08D3FF;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+}
+
+
+
+.about{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        height: 100vh;
+        width: 100%;
+}
+.imgcontainer{
+    /* border: 2px solid white; */
+    width: 500px;
+    height: fit-content;
+}
+.image2{
+    width: 100%;
+    /* border:2px solid #08D3FF; */
+    background-color: #ffffff58;
+    border-radius: 5px;
+}
+.text{
+    /* border: 2px solid red; */
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    gap: 5%;
+    /* border: 2px solid white; */
+}
+.text h1{
+    font-size: 3rem;
+}
+.text p{
+    font-size: 1.2rem;
+}
+.stats{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.btns{
+    display: flex;
+    gap: 2%;
+}
+.btns span{
+    border-bottom: 2px solid white;
+}
+.skill-btn,.edu-btn{
+    font-size: 1rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
+
+
+.servicewrapper{
+    width: 100%;
+    height: 100vh !important;
+    /* border: 2px solid white; */
+}
+.heading{
+    text-align: center;
+    padding-top: 50px;
+}
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    /* border: 2px solid red; */
+    gap: 120px;
+}
+.first-service,.second-service{
+    width: 390px;
+    border: 3px solid #08D3FF;
+    height: 350px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.services img{
+    width: 45px;
+}
+.services button{
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.services button:hover {
+    background-color: #08D3FF;
+    color: white;
+}
+
+
+.contact{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.containt{
+    /* border: 2px solid pink; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.contants{
+    /* border: 2px solid red; */
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+
+}
+.contants h1{
+    font-size: 3.5rem;
+    text-align: center;
+}
+.me{
+    color: #08D3FF;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.email,.number{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+.email a{
+    text-decoration: none;
+    color: white;
+}
+.social-media2{
+    display: flex;
+    gap: 35px;
+}
+.social-media2 img{
+    width: 50px;
+}
+
+.form{
+    /* border: 2px solid green; */
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 2%;
+}
+.name,.mail{
+    height: 10vh;
+    border: none;
+    border-radius: 8px;
+    background-color: #646464;
+    padding: 2%;
+    outline: none;
+}
+.message{
+    height: 35vh;
+    border: none;
+    background-color: #646464;
+    border-radius: 8px;
+    padding: 2%;
+    outline: none;
+}
+.name::placeholder,.mail::placeholder,.message::placeholder{
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.submit{
+    width: 9vw;
+    padding: 2%;
+    border: none;
+    border-radius: 5px;
+    background-color: #08D3FF;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+@keyframes fade{
+    to {
+        opacity: 1; /* Fully visible */
+        transform: translateX(0); /* No horizontal shift */
+      }
+    
+}
+.scrolltotop{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+.scrolltotop img{
+    width: 100%;
+}
+.maincontainer{
+    position: relative;
+}
