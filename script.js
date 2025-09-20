@@ -1,3 +1,14 @@
+// Initialize Lenis
+const lenis = new Lenis();
+
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
 
 const list=document.querySelector(".list")
 const skill=document.querySelector(".skill-btn")
@@ -149,3 +160,36 @@ tl.from(".list a",{
     stagger:0.3,
     delay:0.5
 })
+document.querySelectorAll(".nav-link").forEach(link=>{
+    link.addEventListener("click",e=>{
+        e.preventDefault();
+        const targetId=link.getAttribute("href");
+        gsap.to(window,{
+            scrollTo:targetId,
+            duration:1,
+            ease:"power2.inOut"
+        })
+    }
+    )
+})
+const read1btn =document.querySelector(".read1");
+const read2btn =document.querySelector(".read2");
+
+read1btn.addEventListener("click",e=>{
+     e.preventDefault();
+        gsap.to(window,{
+            scrollTo:contact,
+            duration:1,
+            ease:"power2.inOut"
+        })
+    }
+    )
+    read2btn.addEventListener("click",e=>{
+     e.preventDefault();
+        gsap.to(window,{
+            scrollTo:contact,
+            duration:1,
+            ease:"power2.inOut"
+        })
+    }
+    )

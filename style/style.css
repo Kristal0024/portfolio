@@ -12,6 +12,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    scroll-behavior: smooth;
 }
 body{
     background-color:#101010;
@@ -146,6 +147,12 @@ color: white;
     font-weight: 500;
     text-align: center;
     display: inline-block;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.download:hover{
+    background-color: white;
+    color: black;
 }
 
 
@@ -371,6 +378,7 @@ color: white;
     position: fixed;
     right: 40px;
     bottom: 40px;
+    cursor: pointer;
 }
 .scrolltotop img{
     width: 100%;
