@@ -246,7 +246,19 @@ color: white;
     padding: 15px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.second-service{
+    width: 390px;
+    border: 3px solid #08D3FF;
+    height: 350px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -385,4 +397,10 @@ color: white;
 }
 .maincontainer{
     position: relative;
+}
+.button:focus{
+    display: none;
+}
+a:focus{
+    display: none;
 }
