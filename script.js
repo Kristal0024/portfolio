@@ -40,7 +40,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     uparrow.addEventListener("click", () => {
-        gsap.to(window, { scrollTo:{y:0}, duration: 1 });
+        lenis.scrollTo(0, {duration:2})
     });
 });
 
@@ -160,15 +160,15 @@ tl.from(".list a",{
     stagger:0.3,
     delay:0.5
 })
-document.querySelectorAll(".nav-link").forEach(link=>{
+document.querySelectorAll('a[href^="#"]').forEach(link=>{
     link.addEventListener("click",e=>{
         e.preventDefault();
-        const targetId=link.getAttribute("href");
-        gsap.to(window,{
-            scrollTo:targetId,
-            duration:1,
-            ease:"power2.inOut"
-        })
+        const target=link.getAttribute("href");
+        if(target){
+            lenis.scrollTo(target,{
+                duration:2
+            });
+        }
     }
     )
 })

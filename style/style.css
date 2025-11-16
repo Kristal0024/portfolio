@@ -398,9 +398,3 @@ color: white;
 .maincontainer{
     position: relative;
 }
-.button:focus{
-    display: none;
-}
-a:focus{
-    display: none;
-}
