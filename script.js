@@ -25,6 +25,12 @@ const defaultwebdescription=webDescription.textContent;
 const eduborder=document.querySelector(".eduborder");
 const maincontainer=document.querySelector(".maincontainer");
 const landingpage=document.querySelector(".landing-page");
+const facebook=document.querySelectorAll(".facebook")
+const youtube=document.querySelectorAll(".youtube")
+const linkedin=document.querySelectorAll(".linkedin")
+const github=document.querySelectorAll(".github")
+
+
 const uparrow=document.querySelector(".scrolltotop");
 window.addEventListener("DOMContentLoaded", () => {
     const uparrow = document.querySelector(".scrolltotop");
@@ -151,14 +157,19 @@ document.querySelector(".form").addEventListener("submit",function(event){
     }
 });
 
-//Gsap
+//Gsap---------------------------------------------
 var tl=gsap.timeline();
-
+tl.from(".portfolio h1",{
+    opacity:0,
+    duration:0.5,
+    delay:0.2,
+    y:-10
+})
 tl.from(".list a",{
     opacity:0,
     duration:1,
     stagger:0.3,
-    delay:0.5
+    delay:0.2
 })
 document.querySelectorAll('a[href^="#"]').forEach(link=>{
     link.addEventListener("click",e=>{
@@ -193,3 +204,96 @@ read1btn.addEventListener("click",e=>{
         })
     }
     )
+    facebook.forEach(icon=>{
+    icon.addEventListener("click",()=>{
+        window.open("https://www.facebook.com/wiped.person.3","_blank");
+    })
+})
+youtube.forEach(icon=>{
+icon.addEventListener("click",()=>{
+    alert("didn't have youtube");
+})
+})
+linkedin.forEach(icon=>{
+icon.addEventListener("click",()=>{
+    window.open("https://www.linkedin.com/in/kristal-shrestha-040a0134b");
+})
+})
+github.forEach(icon=>{
+icon.addEventListener("click",()=>{
+    window.open("https://github.com/Kristal0024");
+})
+})
+
+
+tl.from(".topmain",{
+opacity:0,
+duration:2,
+delay:0,
+x:-100
+})
+gsap.from(".backgroundimg",{
+    opacity:0,
+    duration:2,
+    delay:2
+})
+gsap.from(".imgcontainer",{
+    opacity:0,
+    x:-100,
+    duration:1,
+    delay:1,
+    scrollTrigger:{
+        trigger:".imgcontainer",
+        scroller:"body",
+    }
+})
+gsap.from(".text",{
+    opacity:0,
+    x:100,
+    duration:2,
+    delay:1,
+    scrollTrigger:{
+        trigger:".text",
+        scroller:"body"
+    }
+})
+gsap.from(".first-service",{
+    opacity:0,
+    x:-100,
+    duration:2,
+    delay:1,
+    scrollTrigger:{
+        trigger:".first-service",
+        scroller:"body"
+    }
+})
+gsap.from(".second-service",{
+    opacity:0,
+    x:100,
+    duration:2,
+    delay:1,
+    scrollTrigger:{
+        trigger:".second-service",
+        scroller:"body"
+    }
+})
+gsap.from(".containt",{
+    opacity:0,
+    x:-100,
+    duration:2,
+    delay:0.5,
+    scrollTrigger:{
+        trigger:".containt",
+        scroller:"body"
+    }
+})
+gsap.from(".form",{
+    opacity:0,
+    x:200,
+    duration:2,
+    delay:0.5,
+    scrollTrigger:{
+        trigger:".form",
+        scroller:"body"
+    }
+})

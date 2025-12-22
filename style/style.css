@@ -98,6 +98,7 @@ color: white;
     flex-direction: column;
     justify-content: center;
     gap: 40px;
+    padding-left: 10px;
 }
 .discription h2{
     font-size: 30px;
@@ -215,6 +216,7 @@ color: white;
     color: white;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 
@@ -332,8 +334,9 @@ color: white;
     display: flex;
     gap: 35px;
 }
-.social-media2 img{
+.social-media2 .img{
     width: 50px;
+    cursor: pointer;
 }
 
 .form{
@@ -391,6 +394,7 @@ color: white;
     right: 40px;
     bottom: 40px;
     cursor: pointer;
+    display: none;
 }
 .scrolltotop img{
     width: 100%;
