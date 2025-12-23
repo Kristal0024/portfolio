@@ -219,7 +219,10 @@ color: white;
     cursor: pointer;
 }
 
-
+.myworksection{
+    width: 100%;
+    height: fit-content;
+}
 
 
 
