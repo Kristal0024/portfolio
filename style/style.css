@@ -223,6 +223,23 @@ color: white;
     width: 100%;
     height: fit-content;
 }
+.myworksection .heading{
+    margin-bottom: 100px;
+}
+.myworksection .image-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(600px,1fr));
+    grid-gap: 50px;
+    
+}
+.myworksection .image-gallery img{
+   width: 100%;
+   height: auto;
+   transition: transform 0.5s ease-in-out;
+}
+.myworksection .image-gallery img:hover{
+    transform: scale(1.1);
+}
 
 
 
@@ -398,6 +415,7 @@ color: white;
     bottom: 40px;
     cursor: pointer;
     display: none;
+    /* z-index: 999; */
 }
 .scrolltotop img{
     width: 100%;

@@ -241,7 +241,7 @@ gsap.from(".imgcontainer",{
     opacity:0,
     x:-100,
     duration:1,
-    delay:1,
+    delay:0.5,
     scrollTrigger:{
         trigger:".imgcontainer",
         scroller:"body",
@@ -251,7 +251,7 @@ gsap.from(".text",{
     opacity:0,
     x:100,
     duration:2,
-    delay:1,
+    delay:0.5,
     scrollTrigger:{
         trigger:".text",
         scroller:"body"
@@ -261,7 +261,7 @@ gsap.from(".first-service",{
     opacity:0,
     x:-100,
     duration:2,
-    delay:1,
+    delay:0.5,
     scrollTrigger:{
         trigger:".first-service",
         scroller:"body"
@@ -271,7 +271,7 @@ gsap.from(".second-service",{
     opacity:0,
     x:100,
     duration:2,
-    delay:1,
+    delay:0.5,
     scrollTrigger:{
         trigger:".second-service",
         scroller:"body"
@@ -297,3 +297,4 @@ gsap.from(".form",{
         scroller:"body"
     }
 })
+
