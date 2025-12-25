@@ -424,6 +424,9 @@ color: white;
 .maincontainer{
     position: relative;
 }
-button:focus{
+button:focus,a:focus{
+    outline: none;
+}
+button,a{
     outline: none;
 }
