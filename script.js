@@ -157,20 +157,7 @@ document.querySelector(".form").addEventListener("submit",function(event){
     }
 });
 
-//Gsap---------------------------------------------
-var tl=gsap.timeline();
-tl.from(".portfolio h1",{
-    opacity:0,
-    duration:0.5,
-    delay:0.2,
-    y:-10
-})
-tl.from(".list a",{
-    opacity:0,
-    duration:1,
-    stagger:0.3,
-    delay:0.2
-})
+
 document.querySelectorAll('a[href^="#"]').forEach(link=>{
     link.addEventListener("click",e=>{
         e.preventDefault();
@@ -226,6 +213,22 @@ icon.addEventListener("click",()=>{
 })
 
 
+//Gsap---------------------------------------------
+let mm= gsap.matchMedia();
+mm.add("(min-width:900px)",()=>{
+ var tl=gsap.timeline();
+tl.from(".portfolio h1",{
+    opacity:0,
+    duration:0.5,
+    delay:0.2,
+    y:-10
+})
+tl.from(".list a",{
+    opacity:0,
+    duration:1,
+    stagger:0.3,
+    delay:0.2
+})
 tl.from(".topmain",{
 opacity:0,
 duration:2,
@@ -297,4 +300,5 @@ gsap.from(".form",{
         scroller:"body"
     }
 })
-
+})
+   

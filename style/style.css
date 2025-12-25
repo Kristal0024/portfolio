@@ -423,3 +423,6 @@ color: white;
 .maincontainer{
     position: relative;
 }
+button:focus{
+    outline: none;
+}
