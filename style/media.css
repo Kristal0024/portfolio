@@ -49,8 +49,6 @@
     width: 35px;
 
 }
-.hamburgerimg{
-}
 .cross{
     border: 2px solid black;
     border-radius: 50%;
@@ -256,9 +254,8 @@
         z-index: 0;
       }
       .discription{
-        width: 90%;
+        width: 100%;
         gap: 30px;
-        margin-top: 30px;
         margin-bottom: 30px;
         z-index: 0 !important;
       }
@@ -270,6 +267,7 @@
 }
 .discription h3{
     font-size: 20px;
+    width: 80%;
 }
 .discription p{
     line-height: 1.5;
@@ -379,4 +377,10 @@
 }
 .myworksection .heading{
     margin-bottom: 30px;
+}
+.myworksection .image-gallery  img{
+    transition: none;
+}
+.myworksection .image-gallery img:hover{
+    transform: none;
 }
