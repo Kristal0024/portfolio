@@ -29,6 +29,7 @@ const facebook=document.querySelectorAll(".facebook")
 const youtube=document.querySelectorAll(".youtube")
 const linkedin=document.querySelectorAll(".linkedin")
 const github=document.querySelectorAll(".github")
+const workimg=document.querySelectorAll(".workimg")
 
 
 const uparrow=document.querySelector(".scrolltotop");
@@ -267,7 +268,10 @@ gsap.from(".first-service",{
     delay:0.5,
     scrollTrigger:{
         trigger:".first-service",
-        scroller:"body"
+        scroller:"body",
+        scrub:true,
+        start:"top 90%",
+        end:"bottom 60%"
     }
 })
 gsap.from(".second-service",{
@@ -277,7 +281,10 @@ gsap.from(".second-service",{
     delay:0.5,
     scrollTrigger:{
         trigger:".second-service",
-        scroller:"body"
+        scroller:"body",
+        scrub:true,
+        start:"top 90%",
+        end:"bottom 60%"
     }
 })
 gsap.from(".containt",{
@@ -287,7 +294,10 @@ gsap.from(".containt",{
     delay:0.5,
     scrollTrigger:{
         trigger:".containt",
-        scroller:"body"
+        scroller:"body",
+        scrub:true,
+        start:"top 100%",
+        end:"bottom 70%"
     }
 })
 gsap.from(".form",{
@@ -297,8 +307,39 @@ gsap.from(".form",{
     delay:0.5,
     scrollTrigger:{
         trigger:".form",
-        scroller:"body"
+        scroller:"body",
+        start:"top 100%",
+        scrub:true,
+        end:"bottom 70%"
     }
 })
+gsap.from(".workimg",{
+    y:50,
+    opacity:0,
+    duration:1,
+    scrollTrigger:{
+        trigger:".workimg",
+        scroller:"body",
+        start:"top 80%",
+        scrub:true,
+        end:"bottom 60%",
+        stagger:0.3
+    }
 })
-   
+workimg.forEach(card=>{
+    card.addEventListener("mouseenter",()=>{
+    gsap.to(card,{
+        scale:1.05,
+        duration:0.5,
+        ease:"power2.out"
+    })
+})
+card.addEventListener("mouseleave",()=>{
+    gsap.to(card,{
+        scale:1,
+        duration:0.5,
+        ease:"power2.out"
+    })
+})
+})
+})
